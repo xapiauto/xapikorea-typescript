@@ -1,0 +1,58 @@
+{
+  "name": "xapikorea",
+  "version": "0.1.0",
+  "description": "Encar API client for TypeScript and Node.js: search Korean used-car listings, prices, specs, photos and inspection history via XAPI Korea (independent, unofficial).",
+  "keywords": [
+    "encar",
+    "encar api",
+    "encar.com",
+    "encar parser",
+    "korean car api",
+    "used car api",
+    "korean used cars",
+    "car data",
+    "vehicle data",
+    "automotive",
+    "xapi korea",
+    "typescript"
+  ],
+  "homepage": "https://xapikorea.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xapiauto/xapikorea-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xapiauto/xapikorea-typescript/issues"
+  },
+  "license": "MIT",
+  "author": "XAPI Korea",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
